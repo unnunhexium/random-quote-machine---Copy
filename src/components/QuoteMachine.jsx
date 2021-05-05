@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import quotes from "./DataBase";
+import IconButton from "./IconButton/IconButton.jsx";
+import NewQuoteButton from "./NewQuoteButton/NewQuoteButton.jsx";
+import Quote from "./Quote/Quote.jsx";
+import "./Quote/Quote.css";
+import "./IconButton/IconButton.css";
+import "./NewQuoteButton/NewQuoteButton";
 import "./QuoteMachine.css";
-import quotes from "./dataBase";
 
 class QuoteMachine extends Component {
   constructor(props) {
@@ -22,34 +28,15 @@ class QuoteMachine extends Component {
     return (
       <div id="body" style={{ background: this.state.color }}>
         <div id="quote-box">
-          <div id="text" style={{ color: this.state.color }}>
-            {this.state.quote.quote}
-          </div>
-          <div id="author" style={{ color: this.state.color }}>
-            - {this.state.quote.author}
-          </div>
+          <Quote color={this.state.color} quote={this.state.quote} />
           <div id="button-box">
-            <a
-              className="button"
-              id="tweet-quote"
-              style={{ background: this.state.color }}
-            >
-              <img id="tweet" src={"assets/twitter.svg"} />
-            </a>
-            <a
-              className="button"
-              id="repost-quote"
-              style={{ background: this.state.color }}
-            >
-              <img id="repost" src={"assets/tumblr.svg"} />
-            </a>
-            <button
-              id="new-quote"
-              style={{ background: this.state.color }}
-              onClick={this.getQuote}
-            >
-              New quote
-            </button>
+            <IconButton src="assets/tumblr.svg" color={this.state.color} />
+            <IconButton src="assets/twitter.svg" color={this.state.color} />
+            <NewQuoteButton
+              color={this.state.color}
+              clickHandler={this.getQuote}
+              text="New quote"
+            />
           </div>
         </div>
       </div>

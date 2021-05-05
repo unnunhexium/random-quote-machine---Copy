@@ -26,85 +26,9 @@
   background-color: white;
 }
 
-#quote {
-  width: 26px;
-  height: 28px;
-  transform: translate(-10%, 10%);
-}
-
-#text {
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 28px;
-  color: #333;
-  transition: color 2s;
-}
-
-#text::before {
-  content: "\201C";
-  font-size: 58px;
-  line-height: 28px;
-  transform: translate(30px);
-}
-
-#author {
-  margin: 0 auto;
-  justify-items: center;
-  padding: 20px 0px 0px 0px;
-  text-align: right;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #333;
-  transition: color 2s;
-}
-
 #button-box {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-
-#tweet-quote {
-  background-color: #333;
-  border-radius: 3px;
-  height: 38px;
-  width: 40px;
-  margin: 30px 5px 0px 0px;
-  transition: background-color 2s;
-}
-#tweet {
-  padding: 9px 9px 9px 9px;
-}
-
-#repost-quote {
-  background-color: #333;
-  border-radius: 3px;
-  height: 38px;
-  width: 40px;
-  margin: 30px 5px 0px 0px;
-  transition: background-color 2s;
-}
-#repost {
-  padding: 9px;
-  width: 100%;
-}
-
-#new-quote {
-  border: none;
-  border-radius: 3px;
-  height: 38px;
-  width: 102px;
-  margin-left: auto;
-  font-size: 13.6px;
-  color: white;
-  background-color: #333;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 13.3px;
-  font-style: Arial;
-  transition: background-color 2s;
 }

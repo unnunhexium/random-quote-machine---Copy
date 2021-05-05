@@ -1,0 +1,15 @@
+.newquote-button {
+  border: none;
+  border-radius: 3px;
+  height: 38px;
+  width: 102px;
+  margin-left: auto;
+  font-size: 13.6px;
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 13.3px;
+  font-style: Arial;
+  transition: background-color 2s;
+}

@@ -1,0 +1,13 @@
+.icon-button {
+  background-color: #333;
+  border-radius: 3px;
+  display: block;
+  height: 38px;
+  width: 40px;
+  margin: 30px 5px 0px 0px;
+  transition: background-color 2s;
+}
+.icon-button__icon {
+  padding: 9px 9px 9px 9px;
+  width: 100%;
+}
