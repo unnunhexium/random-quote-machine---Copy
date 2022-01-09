@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import quotes from "./DataBase";
+import quotes from "./dataBase.jsx";
 import IconButton from "./IconButton/IconButton.jsx";
 import NewQuoteButton from "./NewQuoteButton/NewQuoteButton.jsx";
 import Quote from "./Quote/Quote.jsx";
